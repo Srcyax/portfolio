@@ -16,6 +16,14 @@ export default function Projects(){
                         }
                     />
                     <CardProject 
+                        image="https://cdn.discordapp.com/icons/1167103676528205905/4e3a7390553c66162256f2f5a9714e71.png" 
+                        title = "Vision store"
+                        desc="A small project for a sales website" 
+                        technologies={
+                            ["html5", "css3", "javascript", "php"]
+                        }
+                    />
+                    <CardProject 
                         image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvfQSPGA9awNjg9S7JXF-EiL36WwfrQQ4qyKNtqYR_uGbEsBxM" 
                         title = "New era"
                         desc="A small LAN multi-player FPS game project" 
@@ -29,14 +37,6 @@ export default function Projects(){
                         desc="A small old LAN multi-player FPS horror game project" 
                         technologies={
                             ["unity", "c#"]
-                        }
-                    />
-                    <CardProject 
-                        image="https://cdn.discordapp.com/icons/1167103676528205905/4e3a7390553c66162256f2f5a9714e71.png" 
-                        title = "Vision store"
-                        desc="A small project for a sales website" 
-                        technologies={
-                            ["html5", "css3", "javascript", "php"]
                         }
                     />
                     <CardProject 
