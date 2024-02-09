@@ -1,4 +1,3 @@
-
 export default function About(){
     var image = "https://cdn.discordapp.com/attachments/793491028762034186/812386679477370910/unknown.png?ex=65cfa60d&is=65bd310d&hm=7ca0fde9706098ac555f06e437e747d1d5332732e4db68532330effcf3144aca&"
 
@@ -10,7 +9,10 @@ export default function About(){
         ["react", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"],
         ["typescript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"],
         ["html5", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"],
+        ["mongodb", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"],
         ["css3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"],
+        ["nextjs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"],
+        ["nodejs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"],
         ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"]
     ]
         
@@ -24,11 +26,11 @@ export default function About(){
                     </h1>
                     <div className="flex flex-col items-center">
                         <h1 className="text-3xl mt-10">Technologies</h1>
-                        <div className="flex flex-row gap-3 p-5 items-center">             
+                        <div className="grid grid-cols-6 grid-rows-none gap-5 p-5">             
                             {
                             technologies.map((element, index) => (
                                 <div key={index}>
-                                    <img className="opacity-70 hover:opacity-100 hover:w-12 transition-all duration-200 ease" width={30} src={element[1]} title={element[0]}/>
+                                    <img className="opacity-70 hover:opacity-100 hover:w-7 transition-all duration-200 ease" width={30} src={element[1]} title={element[0]}/>
                                 </div>
                             ))}
                         </div>

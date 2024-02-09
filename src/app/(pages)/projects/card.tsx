@@ -11,12 +11,13 @@ export default function CardProject({image, title, desc, technologies} : {image 
         ["mongodb", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"],
         ["css3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"],
         ["nextjs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"],
+        ["nodejs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"],
         ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"]
     ]
 
     return (
-        <div className="m-12 border-2 border-indigo-600 rounded-lg border-purple opacity-50 hover:opacity-100 transition 1.5s w-60 h-auto p-5 flex flex-col items-center">
-            <img className="p-5" width={200} src={image} alt="" />
+        <div className="m-12 border-2 border-indigo-600 rounded-lg border-purple opacity-50 hover:opacity-100 w-60 h-auto p-5 flex flex-col items-center transition-all duration-200 ease">
+            <img className="p-5 w-40 h-40 rounded-full" src={image} alt="" />
             <div className="flex flex-col items-center justify-between gap-1">
                 <h1 className="text-2xl">{title}</h1>
                 <div className="flex flex-row gap-1">
@@ -25,7 +26,7 @@ export default function CardProject({image, title, desc, technologies} : {image 
                     <div key={index}>
                         {
                         technologiesUrl.filter(t => t[0] === tech).map((filteredTech, index) => (
-                                <img key={index} className="opacity-70 hover:opacity-100 hover:w-6 transition-all duration-200 ease" width={20} src={filteredTech[1]} title={filteredTech[0]} />
+                            <img key={index} className="opacity-70 hover:opacity-100 hover:w-6 transition-all duration-200 ease" width={20} src={filteredTech[1]} title={filteredTech[0]} />
                         ))}
                     </div>
                 ))}
