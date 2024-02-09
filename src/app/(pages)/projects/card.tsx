@@ -1,18 +1,16 @@
 export default function CardProject({image, title, desc, technologies} : {image : string, title : string, desc : string, technologies : string[]}){
     
     const technologiesUrl = [
-        ["java", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg"],
         ["c#", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"],
-        ["c++", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"],
+        ["unity", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"],
         ["javascript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"],
         ["react", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"],
-        ["typescript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"],
         ["html5", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"],
-        ["mongodb", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"],
         ["css3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"],
         ["nextjs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"],
         ["nodejs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"],
-        ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"]
+        ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"],
+        ["none", "https://img.icons8.com/color/48/cancel-2--v1.png"]
     ]
 
     return (
@@ -35,10 +33,7 @@ export default function CardProject({image, title, desc, technologies} : {image 
             <p className="text-center break-words  text-gray py-5">{desc}</p>
             <div className="flex flex-row mt-auto gap-3">
                 <button className="text-[12px] hover:text-[13px] border-2 border-indigo-600 border-purple bg-transparent hover:bg-purple hover:border-transparent w-16 h-8 rounded-lg transition-all duration-500 ease">
-                    Site
-                </button>
-                <button className="text-[12px] hover:text-[13px] border-2 border-indigo-600 border-purple bg-transparent hover:bg-purple hover:border-transparent w-16 h-8 rounded-lg transition-all duration-500 ease">
-                    Github
+                    View
                 </button>
             </div>
         </div>

@@ -1,15 +1,12 @@
 export default function About(){
-    var image = "https://cdn.discordapp.com/attachments/793491028762034186/812386679477370910/unknown.png?ex=65cfa60d&is=65bd310d&hm=7ca0fde9706098ac555f06e437e747d1d5332732e4db68532330effcf3144aca&"
+    var image = "https://cdn.discordapp.com/attachments/826103334153879614/1205562573798248448/IMG_20240103_004200_061.jpg?ex=65d8d2a3&is=65c65da3&hm=377deb82d3672e379a354477834b030af7d92261cd876ec196c70f67858d4554&"
 
     const technologies = [
-        ["java", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg"],
         ["c#", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"],
-        ["c++", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"],
+        ["unity", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"],
         ["javascript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"],
         ["react", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"],
-        ["typescript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"],
         ["html5", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"],
-        ["mongodb", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"],
         ["css3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"],
         ["nextjs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"],
         ["nodejs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"],
@@ -21,12 +18,12 @@ export default function About(){
             <h1 className="text-4xl">About me</h1>
             <div className="flex flex-row justify-center py-10 gap-48">
                 <div className="flex flex-col py-16 min-w-96 max-w-96 ml-16">
-                    <h1 className="text-2xl text-center">Hello, I'm <strong className="text-purple hover:animate-pulse">Gabriel Guedes</strong> and I'm a developer!
+                    <h1 className="text-2xl text-center">Hello, I'm <strong className="text-purple hover:animate-pulse">Luiz Philipe</strong> and I'm a developer!
                     I currently intend to work in the Web developer area.
                     </h1>
                     <div className="flex flex-col items-center">
                         <h1 className="text-3xl mt-10">Technologies</h1>
-                        <div className="grid grid-cols-6 grid-rows-none gap-5 p-5">             
+                        <div className="grid grid-cols-5 grid-rows-none gap-5 p-5 ">             
                             {
                             technologies.map((element, index) => (
                                 <div key={index}>
@@ -36,7 +33,7 @@ export default function About(){
                         </div>
                     </div>
                 </div>
-                <img src={image} alt="" className="rounded-full transition 1.5s hover:animate-pulse" />
+                <img src={image} alt="" className="w-96 h-96 rounded-full transition 1.5s hover:animate-pulse" />
             </div>
         </div>
     )
