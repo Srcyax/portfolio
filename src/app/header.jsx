@@ -8,7 +8,7 @@ export default function Header(){
                   <h1 className="text-3xl transition 1.3s text-white hover:text-purple">&lt;Guedes/&gt;</h1>
                 <div className="flex flex-row gap-5">
                   <Link href="/about" className="transition 1.3s text-white hover:text-purple">about-me</Link>
-                  <Link href="/about" className="transition 1.3s text-white hover:text-purple">projects</Link>
+                  <Link href="/projects" className="transition 1.3s text-white hover:text-purple">projects</Link>
                 </div>
               </div> 
           </header>  

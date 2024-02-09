@@ -28,7 +28,7 @@ export default function About(){
                             {
                             technologies.map((element, index) => (
                                 <div key={index}>
-                                    <img className="opacity-70 hover:opacity-100 hover:w-12 transition-all duration-500 ease" width={30} src={element[1]} title={element[0]}/>
+                                    <img className="opacity-70 hover:opacity-100 hover:w-12 transition-all duration-200 ease" width={30} src={element[1]} title={element[0]}/>
                                 </div>
                             ))}
                         </div>
