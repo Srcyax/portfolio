@@ -32,7 +32,7 @@ export default function CardProject({image, title, desc, technologies} : {image 
                 ))}
                 </div>
             </div>
-            <p className="text-center text-wrap text-gray py-5">{desc}</p>
+            <p className="text-center break-words  text-gray py-5">{desc}</p>
             <div className="flex flex-row mt-auto gap-3">
                 <button className="text-[12px] hover:text-[13px] border-2 border-indigo-600 border-purple bg-transparent hover:bg-purple hover:border-transparent w-16 h-8 rounded-lg transition-all duration-500 ease">
                     Site
