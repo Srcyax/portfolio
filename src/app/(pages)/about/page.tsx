@@ -5,13 +5,13 @@ export default function About(){
         ["c#", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"],
         ["unity", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"],
         ["javascript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"],
+        ["nodejs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"],
+        ["nextjs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"],
         ["php", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"],
         ["react", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"],
         ["html5", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"],
         ["css3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"],
-        ["nextjs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"],
-        ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"],
-        ["nodejs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"]
+        ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"]
     ]
         
     return (
@@ -27,7 +27,7 @@ export default function About(){
                         <div className="grid grid-cols-5 grid-rows-1 gap-5 p-5 ">             
                             {
                             technologies.map((element, index) => (
-                                <div className="w-24 -mx-8">
+                                <div className="w-24 -mx-8 ">
                                     <div key={index} className="group grid place-items-center transition-all duration-200 ease">
                                         <img className="opacity-70 hover:opacity-100 hover:w-7 transition-all duration-200 ease" width={30} src={element[1]}/>
                                         <p key={index} className="text-[1px] group-hover:text-[12px] opacity-0 group-hover:opacity-100 transition-all duration-200 ease">{element[0]}</p>
