@@ -15,7 +15,7 @@ export default function CardProject({image, title, desc, technologies} : {image 
     ]
 
     return (
-        <div className="m-12 border-2 border-indigo-600 rounded-lg border-purple opacity-50 hover:opacity-100 w-60 h-auto p-5 flex flex-col items-center transition-all duration-200 ease"> 
+        <div className="m-12 border-2 border-indigo-600 rounded-lg border-purple hover:shadow-neon opacity-50 hover:opacity-100 w-60 h-auto p-5 flex flex-col items-center transition-all duration-200 ease"> 
             <img className="p-5 w-40 h-40 rounded-full" src={image} alt="" />
             <div className="flex flex-col items-center justify-between gap-1">
                 <h1 className="text-2xl">{title}</h1>
