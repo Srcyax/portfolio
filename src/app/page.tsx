@@ -16,7 +16,7 @@ export default function Home() {
                     <a href="http://" target="_blank" rel="noopener noreferrer">
                       <Linkedin className='text-white hover:text-purple transition 2.5s' />
                   </a> 
-              </div>  
+              </div>
             </div>
             <div>
                 <img width={500} src={image} alt="legend foto" className="rounded-full" />

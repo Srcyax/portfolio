@@ -10,8 +10,8 @@ export default function About(){
         ["html5", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"],
         ["css3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"],
         ["nextjs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"],
-        ["nodejs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"],
-        ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"]
+        ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"],
+        ["nodejs", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"]
     ]
         
     return (
@@ -24,12 +24,16 @@ export default function About(){
                     </h1>
                     <div className="flex flex-col items-center">
                         <h1 className="text-3xl mt-10">Technologies</h1>
-                        <div className="grid grid-cols-5 grid-rows-none gap-5 p-5 ">             
+                        <div className="grid grid-cols-5 grid-rows-1 gap-5 p-5 ">             
                             {
                             technologies.map((element, index) => (
-                                <div key={index}>
-                                    <img className="opacity-70 hover:opacity-100 hover:w-7 transition-all duration-200 ease" width={30} src={element[1]} title={element[0]}/>
+                                <div className="w-24 -mx-8">
+                                    <div key={index} className="group grid place-items-center transition-all duration-200 ease">
+                                        <img className="opacity-70 hover:opacity-100 hover:w-7 transition-all duration-200 ease" width={30} src={element[1]}/>
+                                        <p key={index} className="text-[1px] group-hover:text-[12px] opacity-0 group-hover:opacity-100 transition-all duration-200 ease">{element[0]}</p>
+                                    </div>
                                 </div>
+                                
                             ))}
                         </div>
                     </div>
