@@ -27,8 +27,8 @@ export default function CardProject({image, title, desc, technologies} : {image 
                         technologiesUrl.filter(t => t[0] === tech).map((filteredTech, index) => (
                             <>
                                 <div className="group grid place-items-center">
-                                    <img key={index} className="opacity-70 hover:opacity-100 hover:w-5 transition-all duration-200 ease" width={22} src={filteredTech[1]} />
-                                    <p key={index} className="text-[1px] group-hover:text-[10px] opacity-0 group-hover:opacity-100 ransition-all duration-200 ease">{filteredTech[0]}</p>
+                                    <img key={index} className="opacity-70 hover:opacity-100 hover:w-5 transition-all duration-100 ease" width={22} src={filteredTech[1]} />
+                                    <p key={index} className="text-[1px] group-hover:text-[10px] opacity-0 group-hover:opacity-100 transition-all duration-100 ease">{filteredTech[0]}</p>
                                 </div>
                             </>
                         ))}
