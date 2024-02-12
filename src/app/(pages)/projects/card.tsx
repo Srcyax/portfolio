@@ -19,7 +19,7 @@ export default function CardProject({image, title, desc, technologies} : {image 
             <img className="p-5 w-40 h-40 rounded-full" src={image} alt="" />
             <div className="flex flex-col items-center justify-between gap-1">
                 <h1 className="text-2xl">{title}</h1>
-                <div className="flex flex-row gap-1">
+                <div className="flex flex-row gap-1 w-40 h-6 justify-center">
                 {
                     technologies.map((tech, index) => (
                     <div key={index}>
