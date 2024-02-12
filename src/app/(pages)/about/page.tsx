@@ -15,16 +15,16 @@ export default function About(){
     ]
         
     return (
-        <div className="flex flex-col justify-center py-16 text-center">
+        <div className="flex flex-col justify-center py-11 text-center">
             <h1 className="text-4xl">About me</h1>
-            <div className="flex flex-col md:flex-row justify-center py-10 gap-0 md:gap-48 items-center">
+            <div className="flex flex-col md:flex-row justify-center my-24 gap-0 md:gap-48 items-center h-96 ">
                 <div className="flex flex-col py-16 md:min-w-96 md:max-w-96">
                     <h1 className="text-2xl text-center">Hello, I'm <strong className="text-purple hover:animate-pulse">Luiz Philipe</strong> and I'm a developer!
                     I currently intend to work in the Web developer area.
                     </h1>
                     <div className="flex flex-col items-center">
                         <h1 className="text-3xl mt-10">Technologies</h1>
-                        <div className="grid grid-cols-5 grid-rows-1 gap-5 p-5">             
+                        <div className="grid grid-cols-5 grid-rows-2 gap-5 p-5 h-40">             
                             {
                             technologies.map((element, index) => (
                                 <div className="w-24 -mx-8 ">
