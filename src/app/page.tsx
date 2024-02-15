@@ -1,3 +1,4 @@
+"use client"
 import { Github, Linkedin } from 'lucide-react';
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-                <img width={500} src={image} alt="legend foto" loading='lazy' className="rounded-full" />
+                <img width={500} src={image} alt="tech image" loading="eager" className="rounded-full" />
             </div>
         </div>
     </main>
