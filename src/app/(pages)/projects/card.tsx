@@ -1,4 +1,4 @@
-import { Github, Globe } from 'lucide-react';
+import { Github, Globe, Key } from 'lucide-react';
 
 export default function CardProject({image, title, desc, technologies, github, site} : {image : string, title : string, desc : string, technologies : string[], github : string, site : string}){
     

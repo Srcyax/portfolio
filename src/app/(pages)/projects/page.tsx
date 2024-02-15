@@ -58,8 +58,7 @@ export default function Projects(){
                 <h1 className="text-3xl mt-10">Projects</h1>
                 <div className="grid grid-cols-3 grid-rows-none max-[766px]:grid-cols-1 max-[925px]:grid-cols-2">
                     {projects.map((project, index) => (
-                        <CardProject
-                            key={index}
+                        <CardProject key={index}
                             image={project.image}
                             title={project.title}
                             desc={project.desc}
