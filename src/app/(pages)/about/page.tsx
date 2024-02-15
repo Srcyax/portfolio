@@ -1,8 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */ 
 
 export default function About(){
-    var image = "https://cdn.discordapp.com/attachments/826103334153879614/1205562573798248448/IMG_20240103_004200_061.jpg?ex=65d8d2a3&is=65c65da3&hm=377deb82d3672e379a354477834b030af7d92261cd876ec196c70f67858d4554&"
-
     const technologies = [
         ["c#", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"],
         ["unity", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"],
@@ -40,7 +38,7 @@ export default function About(){
                         </div>
                     </div>
                 </div>
-                <img src={image} alt="" className="w-56 h-56 rounded-tl-[120px] rounded-br-[120px] shadow-neon transition 1.5s hover:animate-pulse md:w-96 md:h-96" />
+                <img src="images/about/luiz_selfie.png" alt="" className="w-56 h-56 rounded-tl-[120px] rounded-br-[120px] shadow-neon transition 1.5s hover:animate-pulse md:w-96 md:h-96" />
             </div>
         </div>
     )

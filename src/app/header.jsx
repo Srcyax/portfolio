@@ -11,8 +11,9 @@ export default function Header(){
                 <strong className="group-hover:p-1 group-hover:text-purple transition-all duration-200">/&gt;</strong></Link>
 
                 <div className="flex flex-row gap-5">
-                  <Link href="/about" className="transition 1.3s text-white hover:text-purple">about-me</Link>
-                  <Link href="/projects" className="transition 1.3s text-white hover:text-purple">projects</Link>
+                  <Link href="/" className="transition 1.3s text-white hover:text-purple">Home</Link>
+                  <Link href="/about" className="transition 1.3s text-white hover:text-purple">About</Link>
+                  <Link href="/projects" className="transition 1.3s text-white hover:text-purple">Projects</Link>
                 </div>
               </div> 
           </header>  

@@ -1,4 +1,6 @@
-export default function CardProject({image, title, desc, technologies} : {image : string, title : string, desc : string, technologies : string[]}){
+import { Github, Globe } from 'lucide-react';
+
+export default function CardProject({image, title, desc, technologies, github, site} : {image : string, title : string, desc : string, technologies : string[], github : string, site : string}){
     
     const technologiesUrl = [
         ["c#", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"],
@@ -27,8 +29,8 @@ export default function CardProject({image, title, desc, technologies} : {image 
                         technologiesUrl.filter(t => t[0] === tech).map((filteredTech, index) => (
                             <>
                                 <div key={index} className="group grid place-items-center">
-                                    <img key={index} loading="lazy" className="opacity-70 hover:opacity-100 hover:w-5 transition-all duration-100 ease" width={22} src={filteredTech[1]} />
-                                    <p key={index} className="text-[1px] group-hover:text-[10px] opacity-0 group-hover:opacity-100 transition-all duration-100 ease">{filteredTech[0]}</p>
+                                    <img key={index} loading="lazy" className="opacity-70 hover:opacity-100 hover:w-5 transition-all duration-200 ease" width={22} src={filteredTech[1]} />
+                                    <p key={index} className="text-[1px] group-hover:text-[10px] opacity-0 group-hover:opacity-100 transition-all duration-200 ease">{filteredTech[0]}</p>
                                 </div>
                             </>
                         ))}
@@ -38,9 +40,8 @@ export default function CardProject({image, title, desc, technologies} : {image 
             </div>
             <p className="text-center break-words  text-gray py-5">{desc}</p>
             <div className="flex flex-row mt-auto gap-3">
-                <button className="text-[12px] hover:text-[13px] border-2 border-indigo-600 border-purple bg-transparent hover:bg-purple hover:border-transparent w-16 h-8 rounded-lg transition-all duration-500 ease">
-                    View
-                </button>
+                    <a className="group/github text-center p-2 text-[12px] hover:text-[13px] border-2 border-indigo-600 border-purple bg-transparent hover:bg-purple hover:border-transparent rounded-lg transition-all duration-500 ease" href={github} target='_blank'><Github width={20} /></a>
+                    <a className="group/site text-center p-2 text-[12px] hover:text-[13px] border-2 border-indigo-600 border-purple bg-transparent hover:bg-purple hover:border-transparent rounded-lg transition-all duration-500 ease" href={site} target='_blank'><Globe width={20} /></a>
             </div>
         </div>
     )
