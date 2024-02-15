@@ -11,10 +11,10 @@ export default function Home() {
               <h1 className="text-gray text-center">Welcome to my portfolio here you will find some projects developed by me</h1>
               <div className="flex flex-row gap-5 mt-5">
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                      <Github className='text-white hover:text-purple transition 2.5s' />
+                      <Github className="text-white hover:text-purple transition 2.5s" />
                     </a>
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                      <Linkedin className='text-white hover:text-purple transition 2.5s' />
+                      <Linkedin className="text-white hover:text-purple transition 2.5s" />
                   </a> 
               </div>
             </div>
