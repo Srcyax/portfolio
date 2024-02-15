@@ -29,7 +29,7 @@ export default function About(){
                         <div className="grid grid-cols-5 grid-rows-2 gap-5 p-5 h-40">             
                             {
                             technologies.map((element, index) => (
-                                <div className="w-24 -mx-8 ">
+                                <div key={index} className="w-24 -mx-8 ">
                                     <div key={index} className="group grid place-items-center transition-all duration-200 ease">
                                         <img key={index} className="opacity-70 hover:opacity-100 hover:w-7 transition-all duration-200 ease" width={30} src={element[1]}/>
                                         <p key={index} className="text-[1px] group-hover:text-[12px] opacity-0 group-hover:opacity-100 transition-all duration-200 ease">{element[0]}</p>
