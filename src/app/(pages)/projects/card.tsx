@@ -16,7 +16,7 @@ export default function CardProject({image, title, desc, technologies} : {image 
 
     return (
         <div className="m-12 border-2 border-indigo-600 rounded-lg border-purple hover:shadow-neon opacity-50 hover:opacity-100 w-60 h-auto p-5 flex flex-col items-center transition-all duration-200 ease"> 
-            <img className="p-5 w-40 h-40 rounded-full" src={image} alt="" />
+            <img loading="lazy" className="p-5 w-40 h-40 rounded-full" src={image} alt="project image" />
             <div className="flex flex-col items-center justify-between gap-1">
                 <h1 className="text-2xl">{title}</h1>
                 <div className="flex flex-row gap-1 w-40 h-6 justify-center">
@@ -27,7 +27,7 @@ export default function CardProject({image, title, desc, technologies} : {image 
                         technologiesUrl.filter(t => t[0] === tech).map((filteredTech, index) => (
                             <>
                                 <div key={index} className="group grid place-items-center">
-                                    <img key={index} className="opacity-70 hover:opacity-100 hover:w-5 transition-all duration-100 ease" width={22} src={filteredTech[1]} />
+                                    <img key={index} loading="lazy" className="opacity-70 hover:opacity-100 hover:w-5 transition-all duration-100 ease" width={22} src={filteredTech[1]} />
                                     <p key={index} className="text-[1px] group-hover:text-[10px] opacity-0 group-hover:opacity-100 transition-all duration-100 ease">{filteredTech[0]}</p>
                                 </div>
                             </>

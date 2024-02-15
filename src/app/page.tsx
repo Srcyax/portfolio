@@ -19,7 +19,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-                <img width={500} src={image} alt="legend foto" className="rounded-full" />
+                <img width={500} src={image} alt="legend foto" loading='lazy' className="rounded-full" />
             </div>
         </div>
     </main>
