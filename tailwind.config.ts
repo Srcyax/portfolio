@@ -10,6 +10,13 @@ const config = {
 	],
   prefix: "",
   theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'gray': '#808080',
+      'purple': '#a579ff',
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -19,6 +26,9 @@ const config = {
     },
     extend: {
       colors: {
+        boxShadow:{
+          neon: "0 0 5px theme('colors.purple'), 0 0 20px theme('colors.purple')"
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
