@@ -1,3 +1,9 @@
+"use client"
+
+import { Skeleton } from "@/components/ui/skeleton"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useState } from "react";
+
 export default function About(){
     const technologies = [
         ["c#", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"],
@@ -11,7 +17,18 @@ export default function About(){
         ["css3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"],
         ["tailwindcss", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"]
     ]
-        
+    
+    const [imageLoaded, setImageLoaded] = useState({
+        aboutImage: false
+      });
+    
+      const handleImageLoad = (imageType: string) => {
+        setImageLoaded(prevState => ({
+          ...prevState,
+          [imageType]: true
+        }));
+      };
+
     return (
         <div className="flex flex-col justify-center py-11 text-center">
             <h1 className="text-4xl">About me</h1>
@@ -36,7 +53,10 @@ export default function About(){
                         </div>
                     </div>
                 </div>
-                <img src="images/about/luiz_selfie.png" alt="" className="w-56 h-56 rounded-tl-[120px] rounded-br-[120px] transition 1.5s hover:animate-pulse md:w-96 md:h-96" />
+                <div>
+                {!imageLoaded.aboutImage ? <Skeleton className='w-56 h-56 rounded-tl-[120px] rounded-tr-[10px] rounded-bl-[10px] rounded-br-[120px] md:w-96 md:h-96'/> : null}
+                <LazyLoadImage className={imageLoaded.aboutImage ? 'w-56 h-56 shadow-lg shadow-purple rounded-tl-[120px] rounded-tr-[10px] rounded-bl-[10px] rounded-br-[120px] transition 1.5s hover:animate-pulse md:w-96 md:h-96' : ''} width={22} src="images/about/luiz_selfie.png" beforeLoad={() => handleImageLoad('aboutImage')}/>
+                </div>    
             </div>
         </div>
     )
