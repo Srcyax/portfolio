@@ -1,7 +1,21 @@
 "use client"
 import { Github, Linkedin } from 'lucide-react';
+import { Skeleton } from "@/components/ui/skeleton"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useState } from "react";
 
 export default function Home() {
+  const [imageLoaded, setImageLoaded] = useState({
+    homeImage: false
+  });
+
+  const handleImageLoad = (imageType: string) => {
+    setImageLoaded(prevState => ({
+      ...prevState,
+      [imageType]: true
+    }));
+  };
+
   return (
     <main className="flex flex-col items-center justify-between p-14 min-h-52">
         <div className="flex flex-col xl:flex-row justify-between items-center gap-0 xl:gap-60">
@@ -18,7 +32,8 @@ export default function Home() {
               </div>
             </div>
             <div>
-                <img width={500} src="images/home/home_tech.png" alt="tech image" loading="eager" className="rounded-full" />
+                {!imageLoaded.homeImage ? <Skeleton className='rounded-full w-96 h-96'/> : null}
+                <LazyLoadImage className={imageLoaded.homeImage ? 'rounded-full' : ''} width={500} src="images/home/home_tech.png" beforeLoad={() => handleImageLoad('homeImage')}/>
             </div>
         </div>
     </main>
