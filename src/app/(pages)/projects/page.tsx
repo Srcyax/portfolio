@@ -15,7 +15,7 @@ export default function Projects() {
 			title: "Blog Hub",
 			desc: "Come and discover BlogHub, make your post for your friends to see",
 			technologies: ["nextjs", "tailwindcss", "javascript"],
-			github: "https://github.com/blog-hub/",
+			github: "https://github.com/Srcyax/blog-hub/",
 			site: "https://blog-hub-peach.vercel.app/",
 		},
 		{
