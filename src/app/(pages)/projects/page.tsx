@@ -11,6 +11,14 @@ export default function Projects() {
 			site: "https://portfolio-srcyaxs-projects.vercel.app/",
 		},
 		{
+			image: "/images/projects/blog.png",
+			title: "Blog Hub",
+			desc: "Come and discover BlogHub, make your post for your friends to see",
+			technologies: ["nextjs", "tailwindcss", "javascript"],
+			github: "https://github.com/blog-hub/",
+			site: "https://blog-hub-peach.vercel.app/",
+		},
+		{
 			image: "/images/projects/pizza.png",
 			title: "Pizza Hub",
 			desc: "The best pizzeria in the region, enjoy our delicious pizzas",
@@ -33,14 +41,6 @@ export default function Projects() {
 			technologies: ["nextjs", "tailwindcss", "javascript", "react"],
 			github: "https://github.com/Srcyax/quizz",
 			site: "https://quizz-hub-srcyax.vercel.app/",
-		},
-		{
-			image: "/images/projects/place_holder.png",
-			title: "Coming soon",
-			desc: "empty...",
-			technologies: ["none"],
-			github: "https://github.com/Srcyax/",
-			site: "https://github.com/Srcyax/",
 		},
 		{
 			image: "/images/projects/place_holder.png",
