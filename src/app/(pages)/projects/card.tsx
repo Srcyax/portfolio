@@ -4,6 +4,7 @@ import { Github, Globe, Key } from "lucide-react";
 import { useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { technologiesUrl } from "@/components/ui/technologies";
 
 export default function CardProject({
 	image,
@@ -31,54 +32,6 @@ export default function CardProject({
 			[imageType]: true,
 		}));
 	};
-
-	const technologiesUrl = [
-		[
-			"c#",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-		],
-		[
-			"unity",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg",
-		],
-		[
-			"javascript",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-		],
-		[
-			"typescript",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-		],
-		[
-			"php",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
-		],
-		[
-			"react",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-		],
-		[
-			"html5",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-		],
-		[
-			"css3",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-		],
-		[
-			"nextjs",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-		],
-		[
-			"nodejs",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-		],
-		[
-			"tailwindcss",
-			"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-		],
-		["none", "https://img.icons8.com/color/48/cancel-2--v1.png"],
-	];
 
 	return (
 		<div className="m-12 border-2 border-indigo-600 rounded-lg border-purple hover:shadow-neon opacity-50 hover:opacity-100 w-60 h-auto p-5 flex flex-col items-center transition-all duration-200 ease">

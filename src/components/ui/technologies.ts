@@ -1,0 +1,30 @@
+export const technologiesUrl = [
+	[
+		"javascript",
+		"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+	],
+	[
+		"typescript",
+		"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+	],
+	[
+		"react",
+		"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+	],
+	[
+		"html5",
+		"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+	],
+	[
+		"css3",
+		"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+	],
+	[
+		"nextjs",
+		"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+	],
+	[
+		"tailwindcss",
+		"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+	],
+];
