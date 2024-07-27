@@ -11,12 +11,12 @@ export default function Projects() {
 			site: "https://portfolio-srcyaxs-projects.vercel.app/",
 		},
 		{
-			image: "/images/projects/chatzy.png",
-			title: "Chatzy",
-			desc: "Your Ultimate Chatting Destination",
+			image: "/images/projects/yamacha-logo.png",
+			title: "Yamacha",
+			desc: "Proteja seu jogo com Yamacha anti-cheat",
 			technologies: ["nextjs", "tailwindcss", "typescript", "react"],
-			github: "https://github.com/Srcyax/Chatzy/",
-			site: "https://chatzy-three.vercel.app/",
+			github: "https://github.com/Srcyax/",
+			site: "https://yamacha-site.vercel.app/",
 		},
 		{
 			image: "/images/projects/netflix.png",
