@@ -23,10 +23,8 @@ export default function About() {
 			<div className="flex flex-col md:flex-row justify-center my-24 gap-0 md:gap-48 items-center h-96 ">
 				<div className="flex flex-col py-16 md:min-w-96 md:max-w-96">
 					<h1 className="text-2xl text-center">
-						Hello, I&apos;m{" "}
-						<strong className="text-purple hover:animate-pulse">Luiz Philipe</strong>{" "}
-						and I&apos;m a developer! I currently intend to work in the Web developer
-						area.
+						Hello, I&apos;m <strong className="text-purple hover:animate-pulse">Luiz Philipe</strong> and
+						I&apos;m a developer! I currently intend to work in the Web developer area.
 					</h1>
 					<div className="flex flex-col items-center">
 						<h1 className="text-3xl mt-10">Technologies</h1>
@@ -65,7 +63,6 @@ export default function About() {
 								? "w-56 h-56 shadow-lg shadow-purple rounded-tl-[120px] rounded-tr-[10px] rounded-bl-[10px] rounded-br-[120px] transition 1.5s hover:animate-pulse md:w-96 md:h-96"
 								: ""
 						}
-						width={22}
 						src="images/about/luiz_selfie.png"
 						beforeLoad={() => handleImageLoad("aboutImage")}
 					/>
